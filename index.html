@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>Узнай, какая профессия подойдёт именно тебе</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+<meta name="format-detection" content="telephone=no" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	
+<meta property="og:title" content="Узнай, какая профессия подойдёт именно тебе"/>
+<meta property="og:description" content="Виртуальный помощник онлайн-школы программирования #ITGIRLS подскажет направление!"/>
+<meta property="og:image" content="https://profession.itgirlschool.ru/img/share.jpg"/>
+
+<link rel="stylesheet" media="all" href="css/reset.css" />
+<link rel="stylesheet" media="all" href="css/styles.css?v=1.1.1" />
+<link rel="stylesheet" media="all" href="css/media.css?v=1.1.1" />
+
+</head>
+<body>
+
+<header class="header">
+	<div class="container">
+		<a href="#" class="logo"><img src="img/logo.png" alt="#ITGIRLSCHOOL" /></a>
+		<div class="share">
+			<button type="button" class="share__button"></button>
+			<ul>
+			<li><a href="https://vk.com/share.php?noparse=false&url=https%3A%2F%2Fprofession.itgirlschool.ru" class="share__link share__link--vk">Вконтакте</a></li>
+			<li><a href="https://www.facebook.com/sharer.php?src=sp&u=https%3A%2F%2Fprofession.itgirlschool.ru" class="share__link share__link--fb">Facebook</a></li>
+			<li><a href="https://connect.ok.ru/offer?utm_source=shareEMX&title=&url=https%3A%2F%2Fprofession.itgirlschool.ru" class="share__link share__link--ok">Одноклассники</a></li>
+			<li><a href="http://twitter.com/share?url=https%3A%2F%2Fprofession.itgirlschool.ru" class="share__link share__link--tw">Twitter</a></li>
+			</ul>
+		</div>
+		<h1 class="visually-hidden">Какое направление в IT подходит именно тебе?</h1>
+	</div>
+</header>
+
+<main class="chat start">
+	<div class="container">
+		<div class="chat-header">
+			<div class="consultant">
+				<img src="img/consultant-full.svg" alt="Анна ITGIRLS" />
+				<b>Анна ITGIRLS</b>
+				Виртуальный помощник
+			</div>
+			<div class="chat-header__text">Анна ITGIRLS добавила вас в&nbsp;беседу</div>
+		</div>
+		<div class="chat-dialog">
+			<div class="chat-message chat-message__consultant">
+				<div class="chat-message__bubble">
+					<div class="chat-message__text">
+					<p>Привет!<br>
+					Я Анна️ — виртуальный помощник онлайн-школы программирования <span class="blue">#ITGIRLS</span>.</p>
+					<p>Рада, что тебя интересует мир IT&nbsp;🤖 Как я тебя понимаю! Интересные задачи, достойный заработок и&nbsp;возможность реализовать себя на&nbsp;100% встречаются не&nbsp;в&nbsp;каждой сфере.</p>
+					<p>Давай я помогу выбрать направление, которое подойдёт тебе больше всего.<br>
+					Для этого нужно будет ответить на&nbsp;несколько вопросов. Согласна?&nbsp;😉</p>
+					</div>
+					<div class="chat-message__date">Сегодня <span class="time"></span></div>
+				</div>
+			</div>
+		</div>
+		<div class="chat-answers chat-answers__single">
+			<div class="chat-answers__title">Ваш ответ:</div>
+			<div class="chat-answers__bg">
+				<div class="chat-answer"><button type="button" class="chat-answer__inner">Да. Согласна</button></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<script>
+let timeNow = new Date(),
+	hoursNow = timeNow.getHours().toString(),
+	minutesNow = timeNow.getMinutes().toString();
+if (hoursNow.length < 2) hoursNow = '0' + hoursNow;
+if (minutesNow.length < 2) minutesNow = '0' + minutesNow;
+document.querySelector('.chat-message__consultant .chat-message__date .time').insertAdjacentText('beforebegin', hoursNow + ':' + minutesNow);
+</script>
+<script type="text/javascript" src="js/jquery.min.js"></script>		
+<!-- <script type="text/javascript" src="js/script.js?ver=1.1.1"></script> -->
+<script type="text/javascript" src="js/test.js"></script>
+<div id="mobile_detect"></div>
+
+</body>
+</html>

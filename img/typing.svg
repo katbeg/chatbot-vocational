@@ -1,0 +1,11 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="8" cy="16" r="3" fill="black">
+        <animateTransform id="startAnim" attributeName="transform" type="translate" values="0, -6; 0, 0; 0, 0" dur="300ms" calcMode="spline" keyTimes="0; 0.33; 1" keySplines="0.25 0.1 0.25 1; 0 0 1 1" repeatCount="2" begin="indefinite" />
+    </circle>
+    <circle cx="16" cy="16" r="3" fill="black">
+        <animateTransform attributeName="transform" type="translate" values="0, -6; 0, 0; 0, 0" dur="300ms" calcMode="spline" keyTimes="0; 0.33; 1" keySplines="0.25 0.1 0.25 1; 0 0 1 1" repeatCount="2" begin="startAnim + 50ms" />
+    </circle>
+    <circle cx="24" cy="16" r="3" fill="black">
+        <animateTransform attributeName="transform" type="translate" values="0, -6; 0, 0; 0, 0" dur="300ms" calcMode="spline" keyTimes="0; 0.33; 1" keySplines="0.25 0.1 0.25 1; 0 0 1 1" repeatCount="2" begin="startAnim + 100ms" />
+    </circle>
+</svg>
